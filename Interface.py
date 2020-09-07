@@ -88,7 +88,7 @@ class Interface():
             print(self.__card_to_string(self.second_player_cards))
             print("")
 
-        print(" Twój ruch to : ( podaj nazwę lub numer")
+        print(" Twój ruch to : ( podaj nazwę lub numer )")
         #print(" 1: 'Dobranie karty'")
         #print(" 2: 'Niedopieranie karty' ")
         #if(len(self.player_cards)==2):
