@@ -226,8 +226,8 @@ class Interface_GUI():
             x = talia[x_0]
             #print(x)
             if split and len(self.game.pllst[self.current_player].hands_nt) == 1:
-                nazwa_pliku = x[0] + "_" + x[2] + "_g.png"
-            else:nazwa_pliku = x[0] + "_" + x[2] + ".png"
+                nazwa_pliku = "Karty/Czarnobiale/" +x[0] + "-" + x[2] + "_g.png"
+            else:nazwa_pliku = "Karty/" +x[0] + "-" + x[2] + ".png"
             #nazwa_pliku = x[0] + "_" + x[2] + ".png"
             #print(nazwa_pliku)
             img = pygame.image.load(nazwa_pliku)
@@ -235,12 +235,12 @@ class Interface_GUI():
                 x_start = 665
                 window.blit(img,
                             (int(600 + (((x_0 + 1) * 2) - 1) * 300 / (len(talia) * 2) - 0.5 * self.width_card),
-                             350))
+                             270))
             else:
                 x_start = 425
                 window.blit(img,
                             (int(200 + (((x_0 + 1) * 2) - 1) * 600 / (len(talia) * 2) - 0.5 * self.width_card),
-                             350))
+                             270))
 
             #window.blit(img, (x_start + (x_0 * 80), 350 ))
             if self.it_x == x_0:
@@ -270,14 +270,14 @@ class Interface_GUI():
             x = cards_split[s_0]
             # print(it)
             if len(self.game.pllst[self.current_player].hands_nt) == 2:
-                nazwa_pliku = x[0] + "_" + x[2] + "_g.png"
+                nazwa_pliku = "Karty/Czarnobiale/" +x[0] + "-" + x[2] + "_g.png"
             else:
-                nazwa_pliku = x[0] + "_" + x[2] + ".png"
+                nazwa_pliku = "Karty/" +x[0] + "-" + x[2] + ".png"
             # print(nazwa_pliku)
             img = pygame.image.load(nazwa_pliku)
 
             window.blit(img,
-                        (int(100 + (((s_0 + 1) * 2) - 1) * 300 / (len(cards_split) * 2) - 0.5 * self.width_card), 350))
+                        (int(100 + (((s_0 + 1) * 2) - 1) * 300 / (len(cards_split) * 2) - 0.5 * self.width_card), 270))
             #window.blit(img, (170 + (s_0 * 80), 350))
             # if self.it_x == x_0:
             # pygame.time.wait(1000)
@@ -292,14 +292,14 @@ class Interface_GUI():
         len_dealer = len(self.game.dealer.hand.cards)
         while y_0 < len_dealer and s_0 + y_0 + x_0 <it:
             y = self.game.dealer.hand.cards[y_0]
-            nazwa_pliku = y[0] + "_" + y[2] + ".png"
+            nazwa_pliku = "Karty/" + y[0] + "-" + y[2] + ".png"
             #print(nazwa_pliku)
             if not self.odslon and len(self.game.dealer.hand.cards) == 2 and y_0 == 1:
-                window.blit(pygame.image.load("tyl.png"), (int(100 + (((y_0+1)*2)-1)*800/(len_dealer*2)-0.5*self.width_card), 100))
+                window.blit(pygame.image.load("Karty/tyl.png"), (int(100 + (((y_0+1)*2)-1)*800/(len_dealer*2)-0.5*self.width_card), 50))
                 #window.blit(pygame.image.load("tyl.png"), (425 + (y_0 * 80), 100))
             else:
                 #window.blit(pygame.image.load(nazwa_pliku), (425 + (y_0 * 80), 100))
-                window.blit(pygame.image.load(nazwa_pliku), (int(100 +(((y_0+1)*2)-1) * 800 / (len_dealer * 2) - 0.5 * self.width_card), 100))
+                window.blit(pygame.image.load(nazwa_pliku), (int(100 +(((y_0+1)*2)-1) * 800 / (len_dealer * 2) - 0.5 * self.width_card), 50))
             if self.it_y == y_0:
                 #pygame.time.wait(1000)
                 #print("xd")

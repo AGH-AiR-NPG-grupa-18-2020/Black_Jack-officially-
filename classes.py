@@ -50,7 +50,7 @@ def create_player_names(lindexes):
 
 
 def create_deck():
-    deck = NUM_DECKS * DEFAULT_DECK_NA
+    deck = NUM_DECKS * DEFAULT_DECK
     shuffle(deck)
     return deck
 

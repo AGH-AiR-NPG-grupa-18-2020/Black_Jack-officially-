@@ -6,38 +6,40 @@
 #
 
 
-DEFAULT_DECK_NA = [('3', 3, 'Heart'), ('3', 3, 'Heart'), ('7', 7, 'Spade'),  ('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),
-                   ('3', 3, 'Heart'), ('3', 3, 'Heart'),  ('Ace', 0, 'Spade'),
-                   ('3', 3, 'Heart'), ('5', 5, 'Diamond'), ('7', 7, 'Spade'),
-                   ('3', 3, 'Heart'), ('3', 3, 'Heart'), ('7', 7, 'Spade'),   ('Ace', 0, 'Spade'),
-                   ('3', 3, 'Heart'), ('3', 3, 'Heart'),   ('Ace', 0, 'Spade'),
-                   ('3', 3, 'Heart'), ('5', 5, 'Diamond'), ('7', 7, 'Spade'),
-                   ('3', 3, 'Heart'), ('3', 3, 'Heart'), ('7', 7, 'Spade'),   ('Ace', 0, 'Spade'),
-                   ('3', 3, 'Heart'), ('3', 3, 'Heart'),   ('Ace', 0, 'Spade'),
-                   ('3', 3, 'Heart'), ('5', 5, 'Diamond'), ('7', 7, 'Spade'),
-                   ('Ace', 0, 'Spade'),
+DEFAULT_DECK_NA = [('3', 3, 'kier'), ('3', 3, 'kier'), ('7', 7, 'pik'),  ('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),
+                   ('3', 3, 'kier'), ('3', 3, 'kier'),  ('Ace', 0, 'pik'),
+                   ('3', 3, 'kier'), ('5', 5, 'karo'), ('7', 7, 'pik'),
+                   ('3', 3, 'kier'), ('3', 3, 'kier'), ('7', 7, 'pik'),   ('Ace', 0, 'pik'),
+                   ('3', 3, 'kier'), ('3', 3, 'kier'),   ('Ace', 0, 'pik'),
+                   ('3', 3, 'kier'), ('5', 5, 'karo'), ('7', 7, 'pik'),
+                   ('3', 3, 'kier'), ('3', 3, 'kier'), ('7', 7, 'pik'),   ('Ace', 0, 'pik'),
+                   ('3', 3, 'kier'), ('3', 3, 'kier'),   ('Ace', 0, 'pik'),
+                   ('3', 3, 'kier'), ('5', 5, 'karo'), ('7', 7, 'pik'),
+                   ('Ace', 0, 'pik'),
                    ]
 
 
-DEFAULT_TESTS = [('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),
-                 ('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),
-                 ('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade'),('Ace', 0, 'Spade')]
+DEFAULT_TESTS = [('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),
+                 ('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),
+                 ('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik'),('Ace', 0, 'pik')]
 
 
-DEFAULT_DECK = [('Ace', 0, 'Diamond'), ('2', 2, 'Diamond'), ('3', 3, 'Diamond'), ('4', 4, 'Diamond'),
-                   ('5', 5, 'Diamond'), ('6', 6, 'Diamond'), ('7', 7, 'Diamond'), ('8', 8, 'Diamond'),
-                   ('9', 9, 'Diamond'), ('10', 10, 'Diamond'), ('Jack', 10, 'Diamond'),
-                   ('Queen', 10, 'Diamond'), ('King', 10, 'Diamond'), ('Ace', 0, 'Spade'),
-                   ('2', 2, 'Spade'), ('3', 3, 'Spade'), ('4', 4, 'Spade'), ('5', 5, 'Spade'),
-                   ('6', 6, 'Spade'), ('7', 7, 'Spade'), ('8', 8, 'Spade'), ('9', 9, 'Spade'),
-                   ('10', 10, 'Spade'), ('Jack', 10, 'Spade'), ('Queen', 10, 'Spade'), ('King', 10, 'Spade'),
-                   ('Ace', 0, 'Club'), ('2', 2, 'Club'), ('3', 3, 'Club'), ('4', 4, 'Club'),
-                   ('5', 5, 'Club'), ('6', 6, 'Club'), ('7', 7, 'Club'), ('8', 8, 'Club'),
-                   ('9', 9, 'Club'), ('10', 10, 'Club'), ('Jack', 10, 'Club'), ('Queen', 10, 'Club'),
-                   ('King', 10, 'Club'), ('Ace', 0, 'Heart'), ('2', 2, 'Heart'), ('3', 3, 'Heart'),
-                   ('4', 4, 'Heart'), ('5', 5, 'Heart'), ('6', 6, 'Heart'), ('7', 7, 'Heart'),
-                   ('8', 8, 'Heart'), ('9', 9, 'Heart'), ('10', 10, 'Heart'), ('Jack', 10, 'Heart'),
-                   ('Queen', 10, 'Heart'), ("King", 10, 'Heart')]
+DEFAULT_DECK = [('Ace', 0, 'karo'), ('2', 2, 'karo'), ('3', 3, 'karo'), ('4', 4, 'karo'),
+                   ('5', 5, 'karo'), ('6', 6, 'karo'), ('7', 7, 'karo'), ('8', 8, 'karo'),
+                   ('9', 9, 'karo'), ('10', 10, 'karo'), #('Jack', 10, 'karo'),
+                   ('Queen', 10, 'karo'), ('King', 10, 'karo'), ('Ace', 0, 'pik'),
+                   ('2', 2, 'pik'), ('3', 3, 'pik'), ('4', 4, 'pik'), ('5', 5, 'pik'),
+                   ('6', 6, 'pik'), ('7', 7, 'pik'), ('8', 8, 'pik'), ('9', 9, 'pik'),
+                   ('10', 10, 'pik'), #('Jack', 10, 'pik'),
+                ('Queen', 10, 'pik'), ('King', 10, 'pik'),
+                   ('Ace', 0, 'trefl'), ('2', 2, 'trefl'), ('3', 3, 'trefl'), ('4', 4, 'trefl'),
+                   ('5', 5, 'trefl'), ('6', 6, 'trefl'), ('7', 7, 'trefl'), ('8', 8, 'trefl'),
+                   ('9', 9, 'trefl'), ('10', 10, 'trefl'), #('Jack', 10, 'trefl'),
+                # ('Queen', 10, 'trefl'),
+                   ('King', 10, 'trefl'), ('Ace', 0, 'kier'), ('2', 2, 'kier'), ('3', 3, 'kier'),
+                   ('4', 4, 'kier'), ('5', 5, 'kier'), ('6', 6, 'kier'), ('7', 7, 'kier'),
+                   ('8', 8, 'kier'), ('9', 9, 'kier'), ('10', 10, 'kier'), #('Jack', 10, 'kier'),
+                   ('Queen', 10, 'kier'), ("King", 10, 'kier')]
 
 DEFAULT_FLAGS = [{
 
