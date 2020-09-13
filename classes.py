@@ -342,7 +342,7 @@ class Hand(HandDealer):
         return not self.flags["hit"]
 
     def can_split(self):
-        if len(self.cards) == 2:
+        if len(self.cards) == 2 and not self.flags["did_split"]:
             _, card1, _ = self.cards[0]
             _, card2, _ = self.cards[1]
             return card1 == card2
@@ -351,7 +351,7 @@ class Hand(HandDealer):
             return False
 
     def can_insure(self, dealer):
-        return dealer.hand.cards[0][0] == "Ace"
+        return dealer.hand.cards[0][0] == "Ace" and self.can_DD()
 
     def win(self):
         return 2 * self.bet if not self.flags["blackJack"] else 2.5 * self.bet
@@ -433,6 +433,7 @@ class Player:
         if self.can_afford_new_bet(hand):
             index = self.hands_nt.index(hand)
             hand.flags["split"] = True
+            hand.flags["did_split"] = True
             self.hands_nt = [elem for elem in self.hands_nt if elem != hand]
             self.budget -= hand.bet
             hand1, hand2 = Hand(deepcopy([hand.cards[0]]), deepcopy(hand.flags), copy(hand.bet)),\
@@ -470,7 +471,7 @@ class Player:
 
     def check_for_bust(self):
         for hand in self.hands_nt:
-            if hand.score - len(hand.aces) > 21:
+            if hand.score + len(hand.aces) > 21:
                 self.hands_busted.append(hand)
 
     def check_for_split(self):

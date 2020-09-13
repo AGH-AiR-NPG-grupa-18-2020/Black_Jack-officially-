@@ -48,7 +48,8 @@ DEFAULT_FLAGS = [{
     "split": False,
     "insurance": False,
     "stand": False,
-    "blackJack": False
+    "blackJack": False,
+    "did_split": False
 
 }]
 
